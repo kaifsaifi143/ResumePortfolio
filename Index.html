@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Kaif | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Mohammad Kaif, BCA student and aspiring Full Stack Developer from Lucknow." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">MK<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="btn btn-small">Hire Me</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <p class="eyebrow reveal">👋 Hello, I'm</p>
+        <h1 class="reveal">Mohammad <span class="grad">Kaif</span></h1>
+        <h2 class="reveal"><span id="typed"></span><span class="caret">|</span></h2>
+        <p class="lead reveal">
+          BCA student building fast, responsive and user-friendly web applications with clean code and a love for problem solving.
+        </p>
+        <div class="cta reveal">
+          <a href="#projects" class="btn">View Projects →</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <ul class="socials reveal">
+          <li><a href="#" target="_blank" rel="noopener" data-social="github">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener" data-social="linkedin">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener" data-social="instagram">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="hero-card reveal">
+        <div class="code-window">
+          <div class="dots"><i></i><i></i><i></i></div>
+<pre><code><span class="c-k">const</span> <span class="c-v">kaif</span> = {
+  <span class="c-p">role</span>: <span class="c-s">"Full Stack Developer"</span>,
+  <span class="c-p">location</span>: <span class="c-s">"Lucknow, India"</span>,
+  <span class="c-p">stack</span>: [<span class="c-s">"HTML"</span>, <span class="c-s">"CSS"</span>, <span class="c-s">"JS"</span>,
+          <span class="c-s">"Java"</span>, <span class="c-s">"MySQL"</span>],
+  <span class="c-p">learning</span>: <span class="c-s">"DSA & Backend"</span>,
+  <span class="c-p">available</span>: <span class="c-k">true</span>
+};</code></pre>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">↓</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="kicker reveal">About</p>
+        <h3 class="title reveal">Motivated, detail-oriented &amp; always learning</h3>
+        <div class="about-grid">
+          <p class="reveal">
+            I'm a BCA student and aspiring Full Stack Developer with strong proficiency in Java, web technologies,
+            algorithms and responsive design. I enjoy building user-friendly web applications that follow clean
+            code principles, and I keep growing through active problem solving and continuous learning to deliver efficient software solutions.
+          </p>
+          <div class="stats reveal">
+            <div class="stat"><b data-count="2">0</b><span>Live Projects</span></div>
+            <div class="stat"><b data-count="7">0</b><span>Languages Used</span></div>
+            <div class="stat"><b data-count="1">0</b><span>Internship</span></div>
+            <div class="stat"><b data-count="2027">0</b><span>BCA Graduation</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <p class="kicker reveal">Skills</p>
+        <h3 class="title reveal">Technical toolbox</h3>
+        <div class="skill-grid">
+          <article class="card reveal">
+            <h4>💻 Languages</h4>
+            <div class="chips">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>Core Java</span><span>C</span><span>C++</span><span>Python</span>
+            </div>
+          </article>
+          <article class="card reveal">
+            <h4>🗄️ Database</h4>
+            <div class="chips"><span>MySQL</span><span>RDBMS / DBMS</span></div>
+          </article>
+          <article class="card reveal">
+            <h4>🛠️ Dev Tools</h4>
+            <div class="chips"><span>VS Code</span><span>Git</span><span>GitHub</span><span>Vercel Deployment</span></div>
+          </article>
+          <article class="card reveal">
+            <h4>🧠 Other Skills</h4>
+            <div class="chips"><span>Data Structures &amp; Algorithms</span><span>OOPs</span><span>Responsive Frontend</span><span>Clean Code</span></div>
+          </article>
+        </div>
+
+        <div class="bars reveal">
+          <div class="bar"><label>Frontend (HTML/CSS/JS)</label><div><i data-w="85"></i></div></div>
+          <div class="bar"><label>Java &amp; OOPs</label><div><i data-w="75"></i></div></div>
+          <div class="bar"><label>DSA &amp; Problem Solving</label><div><i data-w="70"></i></div></div>
+          <div class="bar"><label>Databases (MySQL)</label><div><i data-w="68"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="kicker reveal">Projects</p>
+        <h3 class="title reveal">Things I've built</h3>
+        <div class="project-grid">
+          <article class="project reveal tilt">
+            <div class="thumb t1"><span>📸</span></div>
+            <div class="p-body">
+              <span class="tag">Frontend &amp; Deployment</span>
+              <h4>Instagram Portfolio App</h4>
+              <ul>
+                <li>Designed and developed an interactive, responsive web application mimicking a modern UI layout.</li>
+                <li>Optimized UI components for seamless user engagement and multi-device, cross-browser compatibility.</li>
+              </ul>
+              <a class="btn btn-small" href="https://instagram-portfolio-ivory.vercel.app/" target="_blank" rel="noopener">🌐 Live Demo</a>
+            </div>
+          </article>
+          <article class="project reveal tilt">
+            <div class="thumb t2"><span>🙋‍♂️</span></div>
+            <div class="p-body">
+              <span class="tag">Frontend &amp; Vercel</span>
+              <h4>Self Intro Portfolio</h4>
+              <ul>
+                <li>Built a personalized, full-featured portfolio highlighting skillsets, background and social presence.</li>
+                <li>Deployed live on Vercel with structured UI design and a lightweight, clean architecture.</li>
+              </ul>
+              <a class="btn btn-small" href="https://self-intro-portfolio-nine.vercel.app/" target="_blank" rel="noopener">🌐 Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section alt" id="experience">
+      <div class="container">
+        <p class="kicker reveal">Experience</p>
+        <h3 class="title reveal">Where I've worked</h3>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="card">
+              <div class="t-head"><h4>Developer Intern / Trainee</h4><span class="tag">Coding Sekho</span></div>
+              <ul>
+                <li>Working on web development and core coding tasks while strengthening practical programming skills.</li>
+                <li>Gained hands-on experience in web technologies, debugging, DSA-based logic building and industry practices.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="kicker reveal">Education</p>
+        <h3 class="title reveal">Academic journey</h3>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="card">
+              <div class="t-head"><h4>Integral University, Lucknow</h4><span class="tag">2024 – 2027</span></div>
+              <p>Bachelor of Computer Applications (BCA)</p>
+            </div>
+          </div>
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="card">
+              <div class="t-head"><h4>Swami Dayanand S I C Surai, Azamgarh</h4><span class="tag">2024</span></div>
+              <p>Class 12th (UP Board)</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra reveal">
+          <div><b>Career Focus</b><span>Frontend / Full Stack Development</span></div>
+          <div><b>Languages</b><span>English, Hindi</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <div class="container narrow">
+        <p class="kicker reveal">Contact</p>
+        <h3 class="title reveal">Let's build something together</h3>
+        <p class="sub reveal">Open to internships, entry-level roles and freelance opportunities.</p>
+        <div class="contact-cards reveal">
+          <a class="card c-card" href="mailto:Kaifazmikaif2@gmail.com"><span>✉️</span><b>Email</b><small>Kaifazmikaif2@gmail.com</small></a>
+          <a class="card c-card" href="tel:+917393058720"><span>📞</span><b>Phone</b><small>+91 7393058720</small></a>
+          <div class="card c-card"><span>📍</span><b>Location</b><small>Lucknow, Uttar Pradesh</small></div>
+        </div>
+        <form class="form reveal" id="contactForm">
+          <div class="row">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+          </div>
+          <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+          <button class="btn" type="submit">Send Message ✉️</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Mohammad Kaif. Built with HTML, CSS &amp; JavaScript.</p>
+    <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
